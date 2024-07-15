@@ -3253,7 +3253,7 @@ attribute set of (submodule)</p>
 <p>Plugin Package.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-null or package or one of “alpha-nvim”, “bufdelete-nvim”, “catppuccin”, “ccc”, “cellular-automaton”, “chatgpt”, “cheatsheet-nvim”, “cinnamon-nvim”, “cmp-buffer”, “cmp-nvim-lsp”, “cmp-path”, “cmp-treesitter”, “cmp-vsnip”, “codewindow-nvim”, “comment-nvim”, “copilot-cmp”, “copilot-lua”, “crates-nvim”, “dashboard-nvim”, “diffview-nvim”, “dracula”, “dressing-nvim”, “elixir-tools”, “fidget-nvim”, “flutter-tools”, “gesture-nvim”, “gitsigns-nvim”, “glow-nvim”, “gruvbox”, “highlight-undo”, “hop-nvim”, “icon-picker-nvim”, “image-nvim”, “indent-blankline”, “leap-nvim”, “lsp-lines”, “lsp-signature”, “lspkind”, “lspsaga”, “lualine”, “mind-nvim”, “minimap-vim”, “modes-nvim”, “neocord”, “neodev-nvim”, “noice-nvim”, “none-ls”, “nui-nvim”, “nvim-autopairs”, “nvim-bufferline-lua”, “nvim-cmp”, “nvim-code-action-menu”, “nvim-colorizer-lua”, “nvim-cursorline”, “nvim-dap”, “nvim-dap-ui”, “nvim-docs-view”, “nvim-lightbulb”, “nvim-lspconfig”, “nvim-navbuddy”, “nvim-navic”, “nvim-neoclip”, “nvim-nio”, “nvim-notify”, “nvim-session-manager”, “nvim-surround”, “nvim-tree-lua”, “nvim-treesitter-context”, “nvim-ts-autotag”, “nvim-web-devicons”, “obsidian-nvim”, “onedark”, “orgmode-nvim”, “oxocarbon”, “plenary-nvim”, “project-nvim”, “registers”, “rose-pine”, “rust-tools”, “scrollbar-nvim”, “smartcolumn”, “sqls-nvim”, “tabular”, “telescope”, “todo-comments”, “toggleterm-nvim”, “tokyonight”, “trouble”, “ts-error-translator”, “vim-dirtytalk”, “vim-fugitive”, “vim-illuminate”, “vim-markdown”, “vim-repeat”, “vim-startify”, “vim-vsnip”, “which-key”, “nvim-treesitter”, “flutter-tools-patched”, “vim-repeat”</p>
+null or package or one of “alpha-nvim”, “bufdelete-nvim”, “catppuccin”, “ccc”, “cellular-automaton”, “chatgpt”, “cheatsheet-nvim”, “cinnamon-nvim”, “cmp-buffer”, “cmp-nvim-lsp”, “cmp-path”, “cmp-treesitter”, “cmp-vsnip”, “codewindow-nvim”, “comment-nvim”, “copilot-cmp”, “copilot-lua”, “crates-nvim”, “dashboard-nvim”, “diffview-nvim”, “dracula”, “dressing-nvim”, “elixir-tools”, “fidget-nvim”, “flutter-tools”, “gesture-nvim”, “gitsigns-nvim”, “glow-nvim”, “gruvbox”, “highlight-undo”, “hop-nvim”, “icon-picker-nvim”, “image-nvim”, “indent-blankline”, “leap-nvim”, “lsp-lines”, “lsp-signature”, “lspkind”, “lspsaga”, “lualine”, “mind-nvim”, “minimap-vim”, “modes-nvim”, “neo-tree-nvim”, “neocord”, “neodev-nvim”, “noice-nvim”, “none-ls”, “nui-nvim”, “nvim-autopairs”, “nvim-bufferline-lua”, “nvim-cmp”, “nvim-code-action-menu”, “nvim-colorizer-lua”, “nvim-cursorline”, “nvim-dap”, “nvim-dap-go”, “nvim-dap-ui”, “nvim-docs-view”, “nvim-lightbulb”, “nvim-lspconfig”, “nvim-navbuddy”, “nvim-navic”, “nvim-neoclip”, “nvim-nio”, “nvim-notify”, “nvim-session-manager”, “nvim-surround”, “nvim-tree-lua”, “nvim-treesitter-context”, “nvim-ts-autotag”, “nvim-web-devicons”, “obsidian-nvim”, “onedark”, “orgmode-nvim”, “oxocarbon”, “plenary-nvim”, “project-nvim”, “registers”, “rose-pine”, “rust-tools”, “scrollbar-nvim”, “smartcolumn”, “sqls-nvim”, “tabular”, “telescope”, “todo-comments”, “toggleterm-nvim”, “tokyonight”, “trouble”, “ts-error-translator”, “vim-dirtytalk”, “vim-fugitive”, “vim-illuminate”, “vim-markdown”, “vim-repeat”, “vim-startify”, “vim-vsnip”, “which-key”, “nvim-treesitter”, “flutter-tools-patched”, “vim-repeat”</p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -3311,6 +3311,477 @@ strings concatenated with “\n”</p>
 <tr><td>
 <code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/wrapper/build/options.nix" target="_top">
 &lt;nvf/modules/wrapper/build/options.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.enable"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.enable"><code class="option">vim.filetree.neo-tree.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable filetree via neo-tree.nvim.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts"><code class="option">vim.filetree.neo-tree.setupOpts</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Option table to pass into the setup function of neo-tree</p><p>You can pass in any additional options even if they’re
+not listed in the docs</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+attribute set of anything</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.enable_cursor_hijack"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.enable_cursor_hijack"><code class="option">vim.filetree.neo-tree.setupOpts.enable_cursor_hijack</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable cursor hijacking.</p><p>If enabled neotree will keep the cursor on the first letter of the filename when moving in the tree
+.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.enable_diagnostics"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.enable_diagnostics"><code class="option">vim.filetree.neo-tree.setupOpts.enable_diagnostics</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable diagnostics.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.enable_git_status"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.enable_git_status"><code class="option">vim.filetree.neo-tree.setupOpts.enable_git_status</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable git status.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.enable_modified_markers"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.enable_modified_markers"><code class="option">vim.filetree.neo-tree.setupOpts.enable_modified_markers</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable markers for files with unsaved changes…</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.enable_opened_markers"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.enable_opened_markers"><code class="option">vim.filetree.neo-tree.setupOpts.enable_opened_markers</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable tracking of opened files.</p><p>Required for <code class="literal">components.name.highlight_opened_files</code>
+.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.enable_refresh_on_write"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.enable_refresh_on_write"><code class="option">vim.filetree.neo-tree.setupOpts.enable_refresh_on_write</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Refresh the tree when a file is written.</p><p>Only used if <code class="literal">use_libuv_file_watcher</code> is false.
+.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.add_blank_line_at_top"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.add_blank_line_at_top"><code class="option">vim.filetree.neo-tree.setupOpts.add_blank_line_at_top</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to add a blank line at the top of the tree</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.auto_clean_after_session_restore"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.auto_clean_after_session_restore"><code class="option">vim.filetree.neo-tree.setupOpts.auto_clean_after_session_restore</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to automatically clean up broken neo-tree buffers
+saved in sessions</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.default_source"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.default_source"><code class="option">vim.filetree.neo-tree.setupOpts.default_source</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>You can choose a specific source.</p><p><code class="literal">last</code> here which indicates the last used source</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;filesystem&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.git_status_async"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.git_status_async"><code class="option">vim.filetree.neo-tree.setupOpts.git_status_async</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable async git status.</p><p>This will make the git status check async and will not block the UI.
+.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.hide_root_node"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.hide_root_node"><code class="option">vim.filetree.neo-tree.setupOpts.hide_root_node</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to hide the root node of the tree</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.log_level"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.log_level"><code class="option">vim.filetree.neo-tree.setupOpts.log_level</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Log level for the plugin.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “trace”, “debug”, “info”, “warn”, “error”, “fatal”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;info&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.log_to_file"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.log_to_file"><code class="option">vim.filetree.neo-tree.setupOpts.log_to_file</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Must be either a boolean or a path to your log file.</p><p>Use :NeoTreeLogs to show the file</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean or string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">/tmp/neo-tree.log</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.open_files_do_not_replace_types"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.open_files_do_not_replace_types"><code class="option">vim.filetree.neo-tree.setupOpts.open_files_do_not_replace_types</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>A list of filetypes that should not be replaced when opening a file</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">[
+  &quot;terminal&quot;
+  &quot;Trouble&quot;
+  &quot;qf&quot;
+  &quot;edgy&quot;
+]
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.open_files_in_last_window"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.open_files_in_last_window"><code class="option">vim.filetree.neo-tree.setupOpts.open_files_in_last_window</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to open files in the last window</p><p>If disabled, neo-tree will open files in top left window</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.neo-tree.setupOpts.retain_hidden_root_indent"></a><a class="term" href="options.html#opt-vim.filetree.neo-tree.setupOpts.retain_hidden_root_indent"><code class="option">vim.filetree.neo-tree.setupOpts.retain_hidden_root_indent</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to retain the indent of the hidden root node</p><p>IF the root node is hidden, keep the indentation anyhow.
+This is needed if you use expanders because they render in the indent.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/filetree/neo-tree/neo-tree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/neo-tree/neo-tree.nix&gt;
 </a></code>
 </td></tr>
 </table>
@@ -8016,7 +8487,7 @@ boolean</p>
 package or list of string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation ccls-0.20240202&gt;</code></p>
+<code class="literal">&lt;derivation clang-tools-17.0.6&gt;</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">&quot;[lib.getExe pkgs.jdt-language-server \&quot; - data \&quot; \&quot; ~/.cache/jdtls/workspace \&quot;]&quot;</code></p>
@@ -8067,7 +8538,7 @@ null or string</p>
 one of “ccls”, “clangd”</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;ccls&quot;</code></p>
+<code class="literal">&quot;clangd&quot;</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -8220,7 +8691,7 @@ boolean</p>
 package</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation prettier-3.3.0&gt;</code></p>
+<code class="literal">&lt;derivation prettier-3.3.2&gt;</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -8652,7 +9123,7 @@ boolean</p>
 package or list of string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation dart-3.4.2&gt;</code></p>
+<code class="literal">&lt;derivation dart-3.4.4&gt;</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">&quot;[lib.getExe pkgs.jdt-language-server \&quot;-data\&quot; \&quot;~/.cache/jdtls/workspace\&quot;]&quot;</code></p>
@@ -9057,7 +9528,7 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Enable Go Debug Adapter</p>
+<p>Enable Go Debug Adapter via nvim-dap-go plugin</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
@@ -9162,7 +9633,7 @@ boolean</p>
 package or list of string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation gopls-0.16.0&gt;</code></p>
+<code class="literal">&lt;derivation gopls-0.16.1&gt;</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">&quot;[lib.getExe pkgs.jdt-language-server \&quot; - data \&quot; \&quot; ~/.cache/jdtls/workspace \&quot;]&quot;</code></p>
@@ -9420,7 +9891,7 @@ boolean</p>
 package or list of string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation jdt-language-server-1.36.0&gt;</code></p>
+<code class="literal">&lt;derivation jdt-language-server-1.37.0&gt;</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">&quot;[lib.getExe pkgs.jdt-language-server \&quot;-data\&quot; \&quot;~/.cache/jdtls/workspace\&quot;]&quot;</code></p>
@@ -10728,7 +11199,7 @@ boolean</p>
 package or list of string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation phpactor-2024.03.09.0&gt;</code></p>
+<code class="literal">&lt;derivation phpactor-2024.06.30.0&gt;</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">&quot;[lib.getExe pkgs.jdt-language-server \&quot; - data \&quot; \&quot; ~/.cache/jdtls/workspace \&quot;]&quot;</code></p>
@@ -10882,7 +11353,7 @@ This is a python package with debugpy installed, see https://nixos.wiki/wiki/Pyt
 package</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation python3-3.11.9-env&gt;</code></p>
+<code class="literal">&lt;derivation python3-3.12.4-env&gt;</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">with pkgs; python39.withPackages (ps: with ps; [debugpy])</code></p>
@@ -10960,7 +11431,7 @@ boolean</p>
 package</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation black-24.4.0&gt;</code></p>
+<code class="literal">&lt;derivation black-24.4.2&gt;</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -11035,7 +11506,7 @@ boolean</p>
 package or list of string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation pyright-1.1.367&gt;</code></p>
+<code class="literal">&lt;derivation pyright-1.1.370&gt;</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">&quot;[lib.getExe pkgs.jdt-language-server \&quot;-data\&quot; \&quot;~/.cache/jdtls/workspace\&quot;]&quot;</code></p>
@@ -11365,7 +11836,7 @@ boolean</p>
 package or list of string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation rust-analyzer-2024-06-11&gt;</code></p>
+<code class="literal">&lt;derivation rust-analyzer-2024-06-24&gt;</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">&quot;[lib.getExe pkgs.jdt-language-server \&quot;-data\&quot; \&quot;~/.cache/jdtls/workspace\&quot;]&quot;</code></p>
@@ -11598,7 +12069,7 @@ boolean</p>
 package</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation sqlfluff-3.0.7&gt;</code></p>
+<code class="literal">&lt;derivation sqlfluff-3.1.0&gt;</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -11882,7 +12353,7 @@ boolean</p>
 package</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation prettier-3.3.0&gt;</code></p>
+<code class="literal">&lt;derivation prettier-3.3.2&gt;</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -11957,7 +12428,7 @@ boolean</p>
 package or list of string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation svelte-language-server-0.16.11&gt;</code></p>
+<code class="literal">&lt;derivation svelte-language-server-0.16.13&gt;</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">&quot;[lib.getExe pkgs.jdt-language-server \&quot;-data\&quot; \&quot;~/.cache/jdtls/workspace\&quot;]&quot;</code></p>
@@ -12113,7 +12584,7 @@ boolean</p>
 package or list of string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation tailwindcss-language-server-0.0.16&gt;</code></p>
+<code class="literal">&lt;derivation tailwindcss-language-server-0.0.20&gt;</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">&quot;[lib.getExe pkgs.jdt-language-server \&quot; - data \&quot; \&quot; ~/.cache/jdtls/workspace \&quot;]&quot;</code></p>
@@ -12478,7 +12949,7 @@ boolean</p>
 package</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation prettier-3.3.0&gt;</code></p>
+<code class="literal">&lt;derivation prettier-3.3.2&gt;</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -18557,7 +19028,7 @@ the wrapper during the build process.</p><p>To avoid overriding packages and dep
 are recommended to use this option or <code class="option">vim.extraPlugins</code> option.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-list of (null or package or one of “alpha-nvim”, “bufdelete-nvim”, “catppuccin”, “ccc”, “cellular-automaton”, “chatgpt”, “cheatsheet-nvim”, “cinnamon-nvim”, “cmp-buffer”, “cmp-nvim-lsp”, “cmp-path”, “cmp-treesitter”, “cmp-vsnip”, “codewindow-nvim”, “comment-nvim”, “copilot-cmp”, “copilot-lua”, “crates-nvim”, “dashboard-nvim”, “diffview-nvim”, “dracula”, “dressing-nvim”, “elixir-tools”, “fidget-nvim”, “flutter-tools”, “gesture-nvim”, “gitsigns-nvim”, “glow-nvim”, “gruvbox”, “highlight-undo”, “hop-nvim”, “icon-picker-nvim”, “image-nvim”, “indent-blankline”, “leap-nvim”, “lsp-lines”, “lsp-signature”, “lspkind”, “lspsaga”, “lualine”, “mind-nvim”, “minimap-vim”, “modes-nvim”, “neocord”, “neodev-nvim”, “noice-nvim”, “none-ls”, “nui-nvim”, “nvim-autopairs”, “nvim-bufferline-lua”, “nvim-cmp”, “nvim-code-action-menu”, “nvim-colorizer-lua”, “nvim-cursorline”, “nvim-dap”, “nvim-dap-ui”, “nvim-docs-view”, “nvim-lightbulb”, “nvim-lspconfig”, “nvim-navbuddy”, “nvim-navic”, “nvim-neoclip”, “nvim-nio”, “nvim-notify”, “nvim-session-manager”, “nvim-surround”, “nvim-tree-lua”, “nvim-treesitter-context”, “nvim-ts-autotag”, “nvim-web-devicons”, “obsidian-nvim”, “onedark”, “orgmode-nvim”, “oxocarbon”, “plenary-nvim”, “project-nvim”, “registers”, “rose-pine”, “rust-tools”, “scrollbar-nvim”, “smartcolumn”, “sqls-nvim”, “tabular”, “telescope”, “todo-comments”, “toggleterm-nvim”, “tokyonight”, “trouble”, “ts-error-translator”, “vim-dirtytalk”, “vim-fugitive”, “vim-illuminate”, “vim-markdown”, “vim-repeat”, “vim-startify”, “vim-vsnip”, “which-key”, “nvim-treesitter”, “flutter-tools-patched”, “vim-repeat”)</p>
+list of (null or package or one of “alpha-nvim”, “bufdelete-nvim”, “catppuccin”, “ccc”, “cellular-automaton”, “chatgpt”, “cheatsheet-nvim”, “cinnamon-nvim”, “cmp-buffer”, “cmp-nvim-lsp”, “cmp-path”, “cmp-treesitter”, “cmp-vsnip”, “codewindow-nvim”, “comment-nvim”, “copilot-cmp”, “copilot-lua”, “crates-nvim”, “dashboard-nvim”, “diffview-nvim”, “dracula”, “dressing-nvim”, “elixir-tools”, “fidget-nvim”, “flutter-tools”, “gesture-nvim”, “gitsigns-nvim”, “glow-nvim”, “gruvbox”, “highlight-undo”, “hop-nvim”, “icon-picker-nvim”, “image-nvim”, “indent-blankline”, “leap-nvim”, “lsp-lines”, “lsp-signature”, “lspkind”, “lspsaga”, “lualine”, “mind-nvim”, “minimap-vim”, “modes-nvim”, “neo-tree-nvim”, “neocord”, “neodev-nvim”, “noice-nvim”, “none-ls”, “nui-nvim”, “nvim-autopairs”, “nvim-bufferline-lua”, “nvim-cmp”, “nvim-code-action-menu”, “nvim-colorizer-lua”, “nvim-cursorline”, “nvim-dap”, “nvim-dap-go”, “nvim-dap-ui”, “nvim-docs-view”, “nvim-lightbulb”, “nvim-lspconfig”, “nvim-navbuddy”, “nvim-navic”, “nvim-neoclip”, “nvim-nio”, “nvim-notify”, “nvim-session-manager”, “nvim-surround”, “nvim-tree-lua”, “nvim-treesitter-context”, “nvim-ts-autotag”, “nvim-web-devicons”, “obsidian-nvim”, “onedark”, “orgmode-nvim”, “oxocarbon”, “plenary-nvim”, “project-nvim”, “registers”, “rose-pine”, “rust-tools”, “scrollbar-nvim”, “smartcolumn”, “sqls-nvim”, “tabular”, “telescope”, “todo-comments”, “toggleterm-nvim”, “tokyonight”, “trouble”, “ts-error-translator”, “vim-dirtytalk”, “vim-fugitive”, “vim-illuminate”, “vim-markdown”, “vim-repeat”, “vim-startify”, “vim-vsnip”, “which-key”, “nvim-treesitter”, “flutter-tools-patched”, “vim-repeat”)</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">[ ]</code></p>
@@ -20005,11 +20476,11 @@ boolean</p>
 <dd>
 <p>List of plugins to load on startup. This is used
 internally to add plugins to Neovim’s runtime.</p><p>To add additional plugins to your configuration, consider
-using the <a class="link" href="options.html#opt-vim.optPlugins"  ><code class="option">vim.extraPlugins</code></a>
+using the <a class="link" href="options.html#opt-vim.extraPlugins"  ><code class="option">vim.extraPlugins</code></a>
 option.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-list of (null or package or one of “alpha-nvim”, “bufdelete-nvim”, “catppuccin”, “ccc”, “cellular-automaton”, “chatgpt”, “cheatsheet-nvim”, “cinnamon-nvim”, “cmp-buffer”, “cmp-nvim-lsp”, “cmp-path”, “cmp-treesitter”, “cmp-vsnip”, “codewindow-nvim”, “comment-nvim”, “copilot-cmp”, “copilot-lua”, “crates-nvim”, “dashboard-nvim”, “diffview-nvim”, “dracula”, “dressing-nvim”, “elixir-tools”, “fidget-nvim”, “flutter-tools”, “gesture-nvim”, “gitsigns-nvim”, “glow-nvim”, “gruvbox”, “highlight-undo”, “hop-nvim”, “icon-picker-nvim”, “image-nvim”, “indent-blankline”, “leap-nvim”, “lsp-lines”, “lsp-signature”, “lspkind”, “lspsaga”, “lualine”, “mind-nvim”, “minimap-vim”, “modes-nvim”, “neocord”, “neodev-nvim”, “noice-nvim”, “none-ls”, “nui-nvim”, “nvim-autopairs”, “nvim-bufferline-lua”, “nvim-cmp”, “nvim-code-action-menu”, “nvim-colorizer-lua”, “nvim-cursorline”, “nvim-dap”, “nvim-dap-ui”, “nvim-docs-view”, “nvim-lightbulb”, “nvim-lspconfig”, “nvim-navbuddy”, “nvim-navic”, “nvim-neoclip”, “nvim-nio”, “nvim-notify”, “nvim-session-manager”, “nvim-surround”, “nvim-tree-lua”, “nvim-treesitter-context”, “nvim-ts-autotag”, “nvim-web-devicons”, “obsidian-nvim”, “onedark”, “orgmode-nvim”, “oxocarbon”, “plenary-nvim”, “project-nvim”, “registers”, “rose-pine”, “rust-tools”, “scrollbar-nvim”, “smartcolumn”, “sqls-nvim”, “tabular”, “telescope”, “todo-comments”, “toggleterm-nvim”, “tokyonight”, “trouble”, “ts-error-translator”, “vim-dirtytalk”, “vim-fugitive”, “vim-illuminate”, “vim-markdown”, “vim-repeat”, “vim-startify”, “vim-vsnip”, “which-key”, “nvim-treesitter”, “flutter-tools-patched”, “vim-repeat”)</p>
+list of (null or package or one of “alpha-nvim”, “bufdelete-nvim”, “catppuccin”, “ccc”, “cellular-automaton”, “chatgpt”, “cheatsheet-nvim”, “cinnamon-nvim”, “cmp-buffer”, “cmp-nvim-lsp”, “cmp-path”, “cmp-treesitter”, “cmp-vsnip”, “codewindow-nvim”, “comment-nvim”, “copilot-cmp”, “copilot-lua”, “crates-nvim”, “dashboard-nvim”, “diffview-nvim”, “dracula”, “dressing-nvim”, “elixir-tools”, “fidget-nvim”, “flutter-tools”, “gesture-nvim”, “gitsigns-nvim”, “glow-nvim”, “gruvbox”, “highlight-undo”, “hop-nvim”, “icon-picker-nvim”, “image-nvim”, “indent-blankline”, “leap-nvim”, “lsp-lines”, “lsp-signature”, “lspkind”, “lspsaga”, “lualine”, “mind-nvim”, “minimap-vim”, “modes-nvim”, “neo-tree-nvim”, “neocord”, “neodev-nvim”, “noice-nvim”, “none-ls”, “nui-nvim”, “nvim-autopairs”, “nvim-bufferline-lua”, “nvim-cmp”, “nvim-code-action-menu”, “nvim-colorizer-lua”, “nvim-cursorline”, “nvim-dap”, “nvim-dap-go”, “nvim-dap-ui”, “nvim-docs-view”, “nvim-lightbulb”, “nvim-lspconfig”, “nvim-navbuddy”, “nvim-navic”, “nvim-neoclip”, “nvim-nio”, “nvim-notify”, “nvim-session-manager”, “nvim-surround”, “nvim-tree-lua”, “nvim-treesitter-context”, “nvim-ts-autotag”, “nvim-web-devicons”, “obsidian-nvim”, “onedark”, “orgmode-nvim”, “oxocarbon”, “plenary-nvim”, “project-nvim”, “registers”, “rose-pine”, “rust-tools”, “scrollbar-nvim”, “smartcolumn”, “sqls-nvim”, “tabular”, “telescope”, “todo-comments”, “toggleterm-nvim”, “tokyonight”, “trouble”, “ts-error-translator”, “vim-dirtytalk”, “vim-fugitive”, “vim-illuminate”, “vim-markdown”, “vim-repeat”, “vim-startify”, “vim-vsnip”, “which-key”, “nvim-treesitter”, “flutter-tools-patched”, “vim-repeat”)</p>
 
 <p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">[
   &quot;plenary-nvim&quot;
@@ -21424,6 +21895,1192 @@ null or string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">&quot;&lt;leader&gt;bsi&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts"><code class="option">vim.tabline.nvimBufferline.setupOpts</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Option table to pass into the setup function of Bufferline-nvim</p><p>You can pass in any additional options even if they’re
+not listed in the docs</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+attribute set of anything</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.highlights"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.highlights"><code class="option">vim.tabline.nvimBufferline.setupOpts.highlights</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Overrides the highlight groups of bufferline.</p><p>See <code class="literal">:help bufferline-highlights</code>.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+(attribute set) or (luaInline)</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.always_show_bufferline"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.always_show_bufferline"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.always_show_bufferline</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to always show bufferline</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.auto_toggle_bufferline"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.auto_toggle_bufferline"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.auto_toggle_bufferline</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to auto toggle bufferline</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.buffer_close_icon"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.buffer_close_icon"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.buffer_close_icon</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Icon for close button</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot; 󰅖 &quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.close_command"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.close_command"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.close_command</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Command to run when closing a buffer</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string or (luaInline)</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">{
+  _type = &quot;lua-inline&quot;;
+  expr = &#x27;&#x27;
+    function(bufnum)
+      require(&quot;bufdelete&quot;).bufdelete(bufnum, false)
+    end
+  &#x27;&#x27;;
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.close_icon"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.close_icon"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.close_icon</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Icon for close button</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;  &quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.color_icons"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.color_icons"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.color_icons</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether or not to add filetype icon highlights</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.custom_filter"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.custom_filter"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.custom_filter</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Custom filter function for filtering out buffers.</p><div class="note"><h3 class="title">Note</h3><p>This will be called a lot, so you are encouraged to keep it as
+short and lightweight as possible unless you are fully aware
+of the performance implications.</p></div>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or (luaInline)</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">custom_filter = function(buf_number, buf_numbers)
+  -- filter out filetypes you don&#x27;t want to see
+  if vim.bo[buf_number].filetype ~= &quot;&lt;i-dont-want-to-see-this&gt;&quot; then
+    return true
+  end
+  -- filter out by buffer name
+  if vim.fn.bufname(buf_number) ~= &quot;&lt;buffer-name-I-dont-want&gt;&quot; then
+      return true
+  end
+  -- filter out based on arbitrary rules
+  -- e.g. filter out vim wiki buffer from tabline in your work repo
+  if vim.fn.getcwd() == &quot;&lt;work-repo&gt;&quot; and vim.bo[buf_number].filetype ~= &quot;wiki&quot; then
+      return true
+  end
+  -- filter out by it&#x27;s index number in list (don&#x27;t show first buffer)
+  if buf_numbers[1] ~= buf_number then
+      return true
+  end
+end
+
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.diagnostics"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.diagnostics"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.diagnostics</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Diagnostics provider to be used in buffer LSP indicators</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of false, “nvim_lsp”, “coc”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;nvim_lsp&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.diagnostics_indicator"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.diagnostics_indicator"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.diagnostics_indicator</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Function to get the diagnostics indicator.
+The function should return a string to be used as the indicator.</p><p>Can be set to nil to keep the buffer name highlight, but delete the
+highlighting.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or (luaInline)</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">{
+  _type = &quot;lua-inline&quot;;
+  expr = &#x27;&#x27;
+    function(count, level, diagnostics_dict, context)
+      local s = &quot; &quot;
+        for e, n in pairs(diagnostics_dict) do
+          local sym = e == &quot;error&quot; and &quot;   &quot;
+            or (e == &quot;warning&quot; and &quot;   &quot; or &quot;  &quot; )
+          s = s .. n .. sym
+        end
+      return s
+    end
+  &#x27;&#x27;;
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.diagnostics_update_in_insert"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.diagnostics_update_in_insert"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.diagnostics_update_in_insert</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to update diagnostics while in insert mode.</p><p>Setting this to true has performance implications, but they may be
+negligible depending on your setup. Set it to true if you know what
+you are doing.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.duplicates_across_groups"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.duplicates_across_groups"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.duplicates_across_groups</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to consider duplicate paths in different groups as duplicates</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.enforce_regular_tabs"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.enforce_regular_tabs"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.enforce_regular_tabs</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enforce regular tabs</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.get_element_icon"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.get_element_icon"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.get_element_icon</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The function bufferline uses to get the icon. Recommended to leave as default.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or (luaInline)</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">function(element)
+  local custom_map = {my_thing_ft: {icon = &quot;my_thing_icon&quot;, hl = &quot;DevIconDefault&quot;}}
+  return custom_map[element.filetype]
+end
+
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.hover.enabled"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.hover.enabled"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.hover.enabled</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable hover.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.hover.delay"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.hover.delay"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.hover.delay</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Delay for hover, in ms</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+signed integer</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">200</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.hover.reveal"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.hover.reveal"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.hover.reveal</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Reveal hover window</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">[
+  &quot;close&quot;
+]
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.indicator.icon"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.indicator.icon"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.indicator.icon</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The indicatotor icon to use for the current buffer.</p><div class="warning"><h3 class="title">Warning</h3><p>This <span class="strong"><strong>must</strong></span> be ommitted while style is not <code class="literal">icon</code></p></div>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.indicator.style"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.indicator.style"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.indicator.style</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Style for indicator</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “icon”, “underline”, “none”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;underline&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.left_mouse_command"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.left_mouse_command"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.left_mouse_command</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Command to run when left clicking a buffer</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or string or (luaInline)</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;buffer %d&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.left_trunc_marker"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.left_trunc_marker"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.left_trunc_marker</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Icon for left truncation</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.max_name_length"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.max_name_length"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.max_name_length</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Max name length</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+signed integer</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">18</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.max_prefix_length"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.max_prefix_length"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.max_prefix_length</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Length of the prefix used when a buffer is de-duplicated</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+signed integer</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">15</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.middle_mouse_command"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.middle_mouse_command"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.middle_mouse_command</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Command to run when middle clicking a buffer</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or string or (luaInline)</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.mode"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.mode"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.mode</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Mode to use for bufferline</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “tabs”, “buffers”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;buffers&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.modified_icon"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.modified_icon"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.modified_icon</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Icon for modified buffer</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;● &quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.move_wraps_at_ends"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.move_wraps_at_ends"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.move_wraps_at_ends</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether or not the move command “wraps” at the first or last position</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.name_formatter"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.name_formatter"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.name_formatter</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p><code class="literal">name_formatter</code> can be used to change the buffer’s label in the
+bufferline.</p><div class="note"><h3 class="title">Note</h3><p>Some names can/will break the bufferline so use this at your
+discretion knowing that it has some limitations that will
+<span class="strong"><strong>NOT</strong></span> be fixed.</p></div>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or (luaInline)</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.numbers"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.numbers"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.numbers</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether or not to show buffer numbers</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “none”, “ordinal”, “buffer_id”, “both” or (luaInline)</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">{
+  _type = &quot;lua-inline&quot;;
+  expr = &#x27;&#x27;
+    function(opts)
+      return string.format(&#x27;%s·%s&#x27;, opts.raise(opts.id), opts.lower(opts.ordinal))
+    end
+  &#x27;&#x27;;
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.offsets"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.offsets"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.offsets</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The windows to offset bufferline above, see <code class="literal">:help bufferline-offset</code></p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of (attribute set)</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">[
+  {
+    filetype = &quot;NvimTree&quot;;
+    highlight = &quot;Directory&quot;;
+    separator = true;
+    text = &quot;File Explorer&quot;;
+  }
+]
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.persist_buffer_sort"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.persist_buffer_sort"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.persist_buffer_sort</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether or not custom sorted buffers should persist</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.right_mouse_command"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.right_mouse_command"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.right_mouse_command</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Command to run when right clicking a buffer</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or string or (luaInline)</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;vertical sbuffer %d&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.right_trunc_marker"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.right_trunc_marker"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.right_trunc_marker</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Icon for right truncation</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.separator_style"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.separator_style"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.separator_style</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The type of separator used to separate buffers and tabs.</p><p>Either one of the listed types, or a list of 2 characters for either side.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or one of “slant”, “padded_slant”, “slope”, “padded_slope”, “thick”, “thin” or list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;thin&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.seperator_style"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.seperator_style"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.seperator_style</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Style of the buffer separator.</p><p>Can be either one of the suspported values, or a list containing
+<span class="strong"><strong>at most</strong></span> two elements for <code class="literal">focused</code> and <code class="literal">unfocused</code> respectively.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “thick”, “thin”, “slope”, “slant” or list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">[
+  &quot; &quot;
+  &quot; &quot;
+]
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.show_buffer_close_icons"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.show_buffer_close_icons"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.show_buffer_close_icons</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether or not to show buffer close icons</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.show_buffer_icons"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.show_buffer_icons"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.show_buffer_icons</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether or not to show buffer icons</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.show_close_icon"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.show_close_icon"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.show_close_icon</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether or not to show the close icon</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.show_duplicate_prefix"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.show_duplicate_prefix"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.show_duplicate_prefix</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether or not to show duplicate buffer prefixes</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.show_tab_indicators"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.show_tab_indicators"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.show_tab_indicators</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether or not to show tab indicators</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.sort_by"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.sort_by"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.sort_by</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Method to sort buffers by. Must be one of the supported values, or an inline Lua value.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “insert_after_current”, “insert_at_end”, “id”, “extension”, “relative_directory”, “directory”, “tabs” or (luaInline)</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;extension&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.style_preset"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.style_preset"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.style_preset</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The base style of bufferline</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “default”, “minimal”, “no_bold”, “no_italic”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;default&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.tab_size"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.tab_size"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.tab_size</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The size of the tabs in bufferline</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+signed integer</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">18</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.themable"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.themable"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.themable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether or not to allow highlight groups to be overriden.</p><p>While false, bufferline.nvim sets highlights as default.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix" target="_top">
+&lt;nvf/modules/plugins/tabline/nvim-bufferline/nvim-bufferline.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.tabline.nvimBufferline.setupOpts.options.truncate_names"></a><a class="term" href="options.html#opt-vim.tabline.nvimBufferline.setupOpts.options.truncate_names"><code class="option">vim.tabline.nvimBufferline.setupOpts.options.truncate_names</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Truncate names</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -26612,6 +28269,512 @@ boolean</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts"><code class="option">vim.ui.noice.setupOpts</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Option table to pass into the setup function of noice.nvim</p><p>You can pass in any additional options even if they’re
+not listed in the docs</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+attribute set of anything</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.format.cmdline"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.format.cmdline"><code class="option">vim.ui.noice.setupOpts.format.cmdline</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>formatting options for the cmdline</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or anything</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">{
+  icon = &quot;&quot;;
+  lang = &quot;vim&quot;;
+  pattern = &quot;^:&quot;;
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.format.filter"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.format.filter"><code class="option">vim.ui.noice.setupOpts.format.filter</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>formatting options for filter</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or anything</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">{
+  icon = &quot;&quot;;
+  lang = &quot;bash&quot;;
+  pattern = &quot;^:%s*!&quot;;
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.format.help"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.format.help"><code class="option">vim.ui.noice.setupOpts.format.help</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>formatting options for help</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or anything</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">{
+  icon = &quot;󰋖&quot;;
+  pattern = &quot;^:%s*he?l?p?%s+&quot;;
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.format.lua"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.format.lua"><code class="option">vim.ui.noice.setupOpts.format.lua</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>formatting options for lua</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or anything</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">{
+  icon = &quot;&quot;;
+  lang = &quot;lua&quot;;
+  pattern = &quot;^:%s*lua%s+&quot;;
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.format.search_down"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.format.search_down"><code class="option">vim.ui.noice.setupOpts.format.search_down</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>formatting options for search_down</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or anything</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">{
+  icon = &quot; &quot;;
+  kind = &quot;search&quot;;
+  lang = &quot;regex&quot;;
+  pattern = &quot;^/&quot;;
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.format.search_up"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.format.search_up"><code class="option">vim.ui.noice.setupOpts.format.search_up</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>formatting options for search_up</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or anything</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">{
+  icon = &quot; &quot;;
+  kind = &quot;search&quot;;
+  lang = &quot;regex&quot;;
+  pattern = &quot;^%?&quot;;
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.lsp.override._cmp.entry.get_documentation_"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.lsp.override._cmp.entry.get_documentation_"><code class="option">vim.ui.noice.setupOpts.lsp.override.&quot;cmp.entry.get_documentation&quot;</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>override cmp documentation with Noice</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.lsp.override._vim.lsp.util.convert_input_to_markdown_lines_"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.lsp.override._vim.lsp.util.convert_input_to_markdown_lines_"><code class="option">vim.ui.noice.setupOpts.lsp.override.&quot;vim.lsp.util.convert_input_to_markdown_lines&quot;</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>override the default lsp markdown formatter with Noice</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.lsp.override._vim.lsp.util.stylize_markdown_"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.lsp.override._vim.lsp.util.stylize_markdown_"><code class="option">vim.ui.noice.setupOpts.lsp.override.&quot;vim.lsp.util.stylize_markdown&quot;</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>override the lsp markdown formatter with Noice</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.lsp.signature.enabled"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.lsp.signature.enabled"><code class="option">vim.ui.noice.setupOpts.lsp.signature.enabled</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable signature help.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.presets.bottom_search"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.presets.bottom_search"><code class="option">vim.ui.noice.setupOpts.presets.bottom_search</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>use a classic bottom cmdline for search</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.presets.command_palette"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.presets.command_palette"><code class="option">vim.ui.noice.setupOpts.presets.command_palette</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>position the cmdline and popupmenu together</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.presets.inc_rename"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.presets.inc_rename"><code class="option">vim.ui.noice.setupOpts.presets.inc_rename</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>enables an input dialog for inc-rename.nvim</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.presets.long_message_to_split"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.presets.long_message_to_split"><code class="option">vim.ui.noice.setupOpts.presets.long_message_to_split</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>long messages will be sent to a split</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.presets.lsp_doc_border"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.presets.lsp_doc_border"><code class="option">vim.ui.noice.setupOpts.presets.lsp_doc_border</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>add a border to hover docs and signature help</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.routes"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.routes"><code class="option">vim.ui.noice.setupOpts.routes</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>How to route messages</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of (submodule)</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;Hide written messages&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.routes._.filter"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.routes._.filter"><code class="option">vim.ui.noice.setupOpts.routes.*.filter</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>a filter for messages matching this route</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+anything</p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.routes._.opts"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.routes._.opts"><code class="option">vim.ui.noice.setupOpts.routes.*.opts</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>options for the view and the route</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or anything</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.ui.noice.setupOpts.routes._.view"></a><a class="term" href="options.html#opt-vim.ui.noice.setupOpts.routes._.view"><code class="option">vim.ui.noice.setupOpts.routes.*.view</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>how this route is viewed</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/ui/noice/noice.nix" target="_top">
+&lt;nvf/modules/plugins/ui/noice/noice.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-vim.ui.smartcolumn.enable"></a><a class="term" href="options.html#opt-vim.ui.smartcolumn.enable"><code class="option">vim.ui.smartcolumn.enable</code>
   </a>
  </span>
@@ -26696,16 +28859,16 @@ null or string or list of string</p>
 <p>The position at which smart column should be displayed for each individual buffer type</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-attribute set of (signed integer or list of signed integer)</p>
+attribute set of (string or list of string)</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">{ }</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">vim.ui.smartcolumn.setupOpts.custom_colorcolumn = {
-  nix = 110;
-  ruby = 120;
-  java = 130;
-  go = [90 130];
+  nix = &quot;110&quot;;
+  ruby = &quot;120&quot;;
+  java = &quot;130&quot;;
+  go = [&quot;90&quot; &quot;130&quot;];
 };
 
 </code></pre>
@@ -28310,7 +30473,7 @@ boolean</p>
 null or package</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation wakatime-cli-1.90.0&gt;</code></p>
+<code class="literal">&lt;derivation wakatime-cli-1.93.0&gt;</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -30519,7 +32682,7 @@ boolean</p>
 </dd>
 <dt>
  <span class="term">
- <a id="opt-vim.visuals.indentBlankline.debounce"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.debounce"><code class="option">vim.visuals.indentBlankline.debounce</code>
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.debounce"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.debounce"><code class="option">vim.visuals.indentBlankline.setupOpts.debounce</code>
   </a>
  </span>
 </dt>
@@ -30543,63 +32706,15 @@ signed integer</p>
 </dd>
 <dt>
  <span class="term">
- <a id="opt-vim.visuals.indentBlankline.eolChar"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.eolChar"><code class="option">vim.visuals.indentBlankline.eolChar</code>
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.indent.char"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.indent.char"><code class="option">vim.visuals.indentBlankline.setupOpts.indent.char</code>
   </a>
  </span>
 </dt>
 <dd>
-<p>Character at end of line</p>
+<p>Character(s) for indentation guide</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;↴&quot;</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
-&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.visuals.indentBlankline.fillChar"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.fillChar"><code class="option">vim.visuals.indentBlankline.fillChar</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Character to fill indents</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;⋅&quot;</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
-&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.visuals.indentBlankline.indent.char"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.indent.char"><code class="option">vim.visuals.indentBlankline.indent.char</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Character for indentation line</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-string</p>
+string or list of string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">&quot;│&quot;</code></p>
@@ -30615,18 +32730,18 @@ string</p>
 </dd>
 <dt>
  <span class="term">
- <a id="opt-vim.visuals.indentBlankline.listChar"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.listChar"><code class="option">vim.visuals.indentBlankline.listChar</code>
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.indent.highlight"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.indent.highlight"><code class="option">vim.visuals.indentBlankline.setupOpts.indent.highlight</code>
   </a>
  </span>
 </dt>
 <dd>
-<p>Character for indentation line</p>
+<p>The highlight group(s) applied to the indentation guide.</p><p>See <code class="literal">:help ibl.config.indent.highlight</code>.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-string</p>
+null or string or list of string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;│&quot;</code></p>
+<code class="literal">null</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -30639,7 +32754,103 @@ string</p>
 </dd>
 <dt>
  <span class="term">
- <a id="opt-vim.visuals.indentBlankline.scope.enabled"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.scope.enabled"><code class="option">vim.visuals.indentBlankline.scope.enabled</code>
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.indent.priority"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.indent.priority"><code class="option">vim.visuals.indentBlankline.setupOpts.indent.priority</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Virtual text priority for the indentation guide</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+signed integer</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">1</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.indent.repeat_linebreak"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.indent.repeat_linebreak"><code class="option">vim.visuals.indentBlankline.setupOpts.indent.repeat_linebreak</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Repeat indentation guides on wrapped lines</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.indent.smart_indent_cap"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.indent.smart_indent_cap"><code class="option">vim.visuals.indentBlankline.setupOpts.indent.smart_indent_cap</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Caps the number of indentation levels based on surrounding code</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.indent.tab_char"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.indent.tab_char"><code class="option">vim.visuals.indentBlankline.setupOpts.indent.tab_char</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Character(s) for tab indentation guide.</p><p>See <code class="literal">:help ibl.config.indent.tab_char</code>.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or string or list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.scope.enabled"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.scope.enabled"><code class="option">vim.visuals.indentBlankline.setupOpts.scope.enabled</code>
   </a>
  </span>
 </dt>
@@ -30663,19 +32874,18 @@ boolean</p>
 </dd>
 <dt>
  <span class="term">
- <a id="opt-vim.visuals.indentBlankline.scope.showEndOfLine"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.scope.showEndOfLine"><code class="option">vim.visuals.indentBlankline.scope.showEndOfLine</code>
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.scope.char"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.scope.char"><code class="option">vim.visuals.indentBlankline.setupOpts.scope.char</code>
   </a>
  </span>
 </dt>
 <dd>
-<p>Displays the end of line character set by <a class="xref" href="options.html#opt-vim.visuals.indentBlankline.eolChar"  ><code class="option">vim.visuals.indentBlankline.eolChar</code></a> instead of the
-indent guide on line returns.</p>
+<p>The character(s) for the scope indentation guide</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-boolean</p>
+string or list of string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">config.vim.visuals.indentBlankline.eolChar != null</code></p>
+<code class="literal">config.vim.visuals.indentBlankline.setuopOpts.indent.char</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -30688,7 +32898,234 @@ boolean</p>
 </dd>
 <dt>
  <span class="term">
- <a id="opt-vim.visuals.indentBlankline.viewportBuffer.max"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.viewportBuffer.max"><code class="option">vim.visuals.indentBlankline.viewportBuffer.max</code>
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.scope.exclude.language"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.scope.exclude.language"><code class="option">vim.visuals.indentBlankline.setupOpts.scope.exclude.language</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The list of treesitter languages to disable scope for.</p><p><code class="literal">*</code> can be used as a wildcard for every language/node type.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.scope.exclude.node_type"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.scope.exclude.node_type"><code class="option">vim.visuals.indentBlankline.setupOpts.scope.exclude.node_type</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Nodes to ignore in scope checking, per language.</p><p><code class="literal">*</code> can be used as a wildcard for every language.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+attribute set of list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">{
+  &quot;*&quot; = [
+    &quot;source_file&quot;
+    &quot;program&quot;
+  ];
+  lua = [
+    &quot;chunk&quot;
+  ];
+  python = [
+    &quot;module&quot;
+  ];
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.scope.highlight"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.scope.highlight"><code class="option">vim.visuals.indentBlankline.setupOpts.scope.highlight</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The highlight group(s) applied to the scope.</p><p>See <code class="literal">:help </code>ibl.config.scope.highlight`.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or string or list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.scope.include.node_type"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.scope.include.node_type"><code class="option">vim.visuals.indentBlankline.setupOpts.scope.include.node_type</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Additional nodes to be used for scope checking, per language</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+attribute set of list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.scope.injected_languages"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.scope.injected_languages"><code class="option">vim.visuals.indentBlankline.setupOpts.scope.injected_languages</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Check for injected languages (treesitter)</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">config.vim.treesitter.enable</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.scope.priority"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.scope.priority"><code class="option">vim.visuals.indentBlankline.setupOpts.scope.priority</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Virtual text priority for the scope</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+signed integer</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">1024</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.scope.show_end"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.scope.show_end"><code class="option">vim.visuals.indentBlankline.setupOpts.scope.show_end</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Show an underline on the last line of the scope</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.scope.show_exact_scope"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.scope.show_exact_scope"><code class="option">vim.visuals.indentBlankline.setupOpts.scope.show_exact_scope</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Show the scope underline at the exact start of the scope, even if that’s to the right of the indentation guide</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.scope.show_start"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.scope.show_start"><code class="option">vim.visuals.indentBlankline.setupOpts.scope.show_start</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Show an underline on the first line of the scope</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.viewport_buffer.max"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.viewport_buffer.max"><code class="option">vim.visuals.indentBlankline.setupOpts.viewport_buffer.max</code>
   </a>
  </span>
 </dt>
@@ -30713,7 +33150,7 @@ signed integer</p>
 </dd>
 <dt>
  <span class="term">
- <a id="opt-vim.visuals.indentBlankline.viewportBuffer.min"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.viewportBuffer.min"><code class="option">vim.visuals.indentBlankline.viewportBuffer.min</code>
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.viewport_buffer.min"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.viewport_buffer.min"><code class="option">vim.visuals.indentBlankline.setupOpts.viewport_buffer.min</code>
   </a>
  </span>
 </dt>
@@ -30726,6 +33163,54 @@ signed integer</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">30</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.whitespace.highlight"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.whitespace.highlight"><code class="option">vim.visuals.indentBlankline.setupOpts.whitespace.highlight</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The highlight group(s) applied to whitespace.</p><p>See <code class="literal">:help ibl.config.whitespace.highlight</code>.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or string or list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/notashelf/nvf/blob/main/modules/plugins/visuals/visuals.nix" target="_top">
+&lt;nvf/modules/plugins/visuals/visuals.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.visuals.indentBlankline.setupOpts.whitespace.remove_blankline_trail"></a><a class="term" href="options.html#opt-vim.visuals.indentBlankline.setupOpts.whitespace.remove_blankline_trail"><code class="option">vim.visuals.indentBlankline.setupOpts.whitespace.remove_blankline_trail</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Remove trailing whitespace on blanklines</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
